@@ -1,0 +1,48 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Chataiddesktopapp.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iQ2hhdGFpZGRlc2t0b3BhcHAuam5scCI+DQogIDxpbmZvcm1hdGlvbj4NCiAgICA8dGl0bGU+Q2hhdGFpZGRlc2t0b3BhcHA8L3RpdGxlPg0KICAgIDx2ZW5kb3I+U2FhZDwvdmVuZG9yPg0KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJDaGF0YWlkZGVza3RvcGFwcC5qYXIiIHNpemU9IjI4NDYiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxhcHBsaWNhdGlvbi1kZXNjIG1haW4tY2xhc3M9ImNoYXRhaWRkZXNrdG9wYXBwLkNoYXRhaWQiICBuYW1lPSJDaGF0YWlkZGVza3RvcGFwcCIgPg0KICA8L2FwcGxpY2F0aW9uLWRlc2M+DQogIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPg0KPC9qbmxwPg0K'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedchataiddesktopapp() {
+        dtjava.embed(
+            {
+                id : 'chataiddesktopapp',
+                toolkit : 'swing',
+                url : 'Chataiddesktopapp_browser.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iQ2hhdGFpZGRlc2t0b3BhcHBfYnJvd3Nlci5qbmxwIj4NCiAgPGluZm9ybWF0aW9uPg0KICAgIDx0aXRsZT5DaGF0YWlkZGVza3RvcGFwcDwvdGl0bGU+DQogICAgPHZlbmRvcj5TYWFkPC92ZW5kb3I+DQogICAgPGRlc2NyaXB0aW9uPm51bGw8L2Rlc2NyaXB0aW9uPg0KICAgIDxvZmZsaW5lLWFsbG93ZWQvPg0KICA8L2luZm9ybWF0aW9uPg0KICA8cmVzb3VyY2VzPg0KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4NCiAgICA8amFyIGhyZWY9IkNoYXRhaWRkZXNrdG9wYXBwLmphciIgc2l6ZT0iMjg0NiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICA8L3Jlc291cmNlcz4NCiAgPGFwcGxldC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY2hhdGFpZGRlc2t0b3BhcHAuQ2hhdGFpZCIgIG5hbWU9IkNoYXRhaWRkZXNrdG9wYXBwIiA+DQogIDwvYXBwbGV0LWRlc2M+DQogIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPg0KPC9qbmxwPg0K'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {
+                onGetSplash : function() {}
+            }
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedchataiddesktopapp);
+</script>
+
+</head><body>
+<h2>Test page for <b>Chataiddesktopapp</b></h2>
+  <b>Webstart:</b> <a href='Chataiddesktopapp.jnlp' onclick="return launchApplication('Chataiddesktopapp.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

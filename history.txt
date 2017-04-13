@@ -1,0 +1,21 @@
+
+User :   hi
+
+BOT :  Welcome to Go Shop
+
+User :   I want to buy wallet
+
+BOT :  Mention product Code
+
+User :   GSW-501
+
+BOT :  Product price: Rs 1200
+
+User :   any delivery charges?
+
+BOT :  Delivery charges Rs 150
+
+User :   how to order?
+
+BOT :  To book your order mention product code, color, name, contact 
+		number and complete address.
